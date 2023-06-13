@@ -1,0 +1,52 @@
+[
+  {
+    "user_id": 1,
+    "clocked_time": "09:05:00",
+    "type": "CLOCK_IN"
+  },
+  {
+    "user_id": 2,
+    "clocked_time": "07:10:00",
+    "type": "CLOCK_IN"
+  },
+  {
+    "user_id": 1,
+    "clocked_time": "19:15:00",
+    "type": "CLOCK_OUT"
+  },
+  {
+    "user_id": 2,
+    "clocked_time": "15:10:00",
+    "type": "CLOCK_OUT"
+  },
+  {
+    "user_id": 3,
+    "clocked_time": "09:05:00",
+    "type": "CLOCK_IN"
+  },
+  {
+    "user_id": 4,
+    "clocked_time": "07:10:00",
+    "type": "CLOCK_IN"
+  },
+  {
+    "user_id": 3,
+    "clocked_time": "19:15:00",
+    "type": "CLOCK_OUT"
+  },
+  {
+    "user_id": 4,
+    "clocked_time": "15:10:00",
+    "type": "CLOCK_OUT"
+  },
+  {
+    "user_id": 5,
+    "clocked_time": "07:10:00",
+    "type": "CLOCK_IN"
+  },
+  {
+    "user_id": 5,
+    "clocked_time": "15:10:00",
+    "type": "CLOCK_OUT"
+  }
+]

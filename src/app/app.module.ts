@@ -26,6 +26,7 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

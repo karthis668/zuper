@@ -4,7 +4,9 @@
   <div class="row">
     <div class="col-12">
 
-
+      <div class="alert alert-primary" role="alert">
+       Welcome to <span class="fs-5" style="color: indianred;">Zuper!</span>
+      </div>
       <div class="card" >
         <div class="card-body">
           <h5 class="card-title">User Input Logs</h5>
@@ -45,16 +47,16 @@
                 <tr>
                   <th scope="col">ID</th>
                   <th scope="col">Name</th>
-                  <th scope="col">Start Time</th>
-                  <th scope="col">Start Time</th>
+                  <th scope="col">Checkin Time</th>
+                  <th scope="col">Checkout Time</th>
                 </tr>
               </thead>
               <tbody>
                 <tr *ngFor="let data of userData">
                   <th scope="row">{{data.user_id}}</th>
                   <td class="text-decoration-underline" style="cursor: pointer;" (click)="navigateUserDetails(data)">{{data.name}}</td>
-                  <td>{{data.start_time }}</td>
-                  <td>{{data.end_time }}</td>
+                  <td>{{data.clock_in_time }}</td>
+                  <td>{{data.clock_out_time  }}</td>
                 </tr>
               </tbody>
             </table>
@@ -64,6 +66,45 @@
       </div>
 
 
+      <div class="card mt-5" >
+        <div class="card-body">
+          <h5 class="card-title">Consolidated User Data</h5>
+          <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+          <div>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Start Time</th>
+                  <th scope="col">End Time</th>
+                  <th scope="col">Checkin Time</th>
+                  <th scope="col">checkout Time</th>
+                  <th scope="col">Work Time</th>
+                  <th scope="col">Over Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of consolidatedUserData">
+                  <th scope="row">{{data.user_id}}</th>
+                  <td class="text-decoration-underline" style="cursor: pointer;" (click)="navigateUserDetails(data)">{{data.name}}</td>
+                  <td>{{data.start_time }}</td>
+                  <td>{{data.end_time }}</td>
+                  <td>{{data.clock_in_time }}</td>
+                  <td>{{data.clock_out_time  }}</td>
+                  <td>{{data.work_time }}</td>
+                  <td>{{data.overTime  }}</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 </div>
+

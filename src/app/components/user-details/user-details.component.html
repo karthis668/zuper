@@ -1,3 +1,120 @@
-<p>
-  user-details works!
-</p>
+<div class="p-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+      <li class="breadcrumb-item active" aria-current="page">User-Details</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="alert alert-secondary" role="alert">
+            User Name : {{data.name}}, Salem, Tamil Nadu.
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-4 mb-4 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Shift Start & End Time</h5>
+              <div class="page-content page-container" id="page-content">
+                <div class="padding">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="timeline p-2 block">
+                                <div class="tl-item active">
+                                    <div class="tl-dot b-primary"></div>
+                                    <div class="tl-content">
+                                        <div class="">Start</div>
+                                        <div class="tl-date text-muted mt-1">{{data.start_time || 0}}</div>
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-dot b-primary"></div>
+                                    <div class="tl-content">
+                                        <div class="">End</div>
+                                        <div class="tl-date text-muted mt-1">{{data.end_time || 0}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Checkin & Checkout Time</h5>
+              <div class="page-content page-container" id="page-content">
+                <div class="padding">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="timeline p-2 block">
+                                <div class="tl-item active">
+                                    <div class="tl-dot b-warning"></div>
+                                    <div class="tl-content">
+                                        <div class="">Checkin</div>
+                                        <div class="tl-date text-muted mt-1">{{data.clock_in_time || 0}}</div>
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-dot b-warning"></div>
+                                    <div class="tl-content">
+                                        <div class="">Checkout</div>
+                                        <div class="tl-date text-muted mt-1">{{data.clock_out_time || 0}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-sm-4 mb-4 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Work & Over Time</h5>
+              <div class="page-content page-container" id="page-content">
+                <div class="padding">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="timeline p-2 block">
+                                <div class="tl-item active">
+                                    <div class="tl-dot b-danger"></div>
+                                    <div class="tl-content">
+                                        <div class="">Work Time</div>
+                                        <div class="tl-date text-muted mt-1">{{data.work_time || 0}}</div>
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-dot b-danger"></div>
+                                    <div class="tl-content">
+                                        <div class="">Over Time</div>
+                                        <div class="tl-date text-muted mt-1">{{data.overtime || 0}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

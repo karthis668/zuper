@@ -9,8 +9,8 @@
         <div class="card-body">
           <h5 class="card-title">User Input Logs</h5>
           <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-          <div class="row">
-            <div class="col-md-12">
+          <div>
+            <div class="table-responsive">
               <table class="table table-hover table-bordered">
                 <thead>
                   <tr>
@@ -41,7 +41,7 @@
         <div class="card-body">
           <h5 class="card-title">Timelog Inputs</h5>
           <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-          <div>
+          <div class="table-responsive">
             <table class="table table-hover table-bordered">
               <thead>
                 <tr>
@@ -87,7 +87,7 @@
               <tbody>
                 <tr *ngFor="let data of consolidatedUserData">
                   <th scope="row">{{data.user_id}}</th>
-                  <td class="text-decoration-underline" style="cursor: pointer;" (click)="navigateUserDetails(data)">
+                  <td class="text-decoration-underline text-primary" style="cursor: pointer;" (click)="navigateUserDetails(data)">
                     {{data.name}}</td>
                   <td>{{data.start_time }}</td>
                   <td>{{data.end_time }}</td>

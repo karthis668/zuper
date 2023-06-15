@@ -1,35 +1,35 @@
-
-
 <div class="p-4">
   <div class="row">
     <div class="col-12">
 
       <div class="alert alert-primary" role="alert">
-       Welcome to <span class="fs-5" style="color: indianred;">Zuper!</span>
+        Welcome to <span class="fs-5" style="color: indianred;">Zuper!</span>
       </div>
-      <div class="card" >
+      <div class="card">
         <div class="card-body">
           <h5 class="card-title">User Input Logs</h5>
           <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-          <div>
-            <table class="table table-hover table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Start Time</th>
-                  <th scope="col">End Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr *ngFor="let data of userData">
-                  <th scope="row">{{data.user_id}}</th>
-                  <td >{{data.name}}</td>
-                  <td>{{data.start_time }}</td>
-                  <td>{{data.end_time }}</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Start Time</th>
+                    <th scope="col">End Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let data of userData">
+                    <th scope="row">{{data.user_id}}</th>
+                    <td>{{data.name}}</td>
+                    <td>{{data.start_time }}</td>
+                    <td>{{data.end_time }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
           </div>
         </div>
@@ -37,7 +37,7 @@
 
 
 
-      <div class="card mt-5" >
+      <div class="card mt-5">
         <div class="card-body">
           <h5 class="card-title">Timelog Inputs</h5>
           <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
@@ -56,7 +56,7 @@
                   <th scope="row">{{data.user_id}}</th>
                   <td>{{data.name}}</td>
                   <td>{{data.clock_in_time }}</td>
-                  <td>{{data.clock_out_time  }}</td>
+                  <td>{{data.clock_out_time }}</td>
                 </tr>
               </tbody>
             </table>
@@ -66,11 +66,11 @@
       </div>
 
 
-      <div class="card mt-5" >
+      <div class="card mt-5">
         <div class="card-body">
           <h5 class="card-title">Consolidated User Data</h5>
           <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-          <div>
+          <div class="table-responsive-sm">
             <table class="table table-hover table-bordered">
               <thead>
                 <tr>
@@ -87,13 +87,14 @@
               <tbody>
                 <tr *ngFor="let data of consolidatedUserData">
                   <th scope="row">{{data.user_id}}</th>
-                  <td class="text-decoration-underline" style="cursor: pointer;" (click)="navigateUserDetails(data)">{{data.name}}</td>
+                  <td class="text-decoration-underline" style="cursor: pointer;" (click)="navigateUserDetails(data)">
+                    {{data.name}}</td>
                   <td>{{data.start_time }}</td>
                   <td>{{data.end_time }}</td>
                   <td>{{data.clock_in_time }}</td>
-                  <td>{{data.clock_out_time  }}</td>
+                  <td>{{data.clock_out_time }}</td>
                   <td>{{data.work_time }}</td>
-                  <td>{{data.overTime  }}</td>
+                  <td>{{data.overTime }}</td>
                 </tr>
               </tbody>
             </table>
@@ -107,4 +108,3 @@
     </div>
   </div>
 </div>
-

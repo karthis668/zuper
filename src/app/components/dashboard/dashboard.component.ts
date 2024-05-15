@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import * as userlogData from '../../../assets/userinput.json';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import * as moment from 'moment';
+import moment from "moment";
+
 
 
 export interface PeriodicElement {
